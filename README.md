@@ -5,7 +5,7 @@ A kitchen of my development environment.
 ## How to create a cookbook
 
 ```
-$ cd /path/to/chef_repo
+$ cd /path/to/chef_repo/cookbooks
 $ chef generate cookbook <cookbook name>
 ```
 
