@@ -5,6 +5,14 @@
 
     ]
   },
+  "default": {
+    "ruby": {
+      "user": "vagrant",
+      "rbenv_git_repository": "https://github.com/sstephenson/rbenv.git",
+      "ruby_build_git_repository": "https://github.com/sstephenson/ruby-build.git",
+      "ruby_version": "2.2.3"
+    }
+  },
   "automatic": {
     "cpu": {
       "0": {
@@ -72,13 +80,13 @@
     "filesystem": {
       "/dev/mapper/centos-root": {
         "kb_size": "40313620",
-        "kb_used": "1787636",
-        "kb_available": "38525984",
-        "percent_used": "5%",
+        "kb_used": "2733580",
+        "kb_available": "37580040",
+        "percent_used": "7%",
         "mount": "/",
         "total_inodes": "40333312",
-        "inodes_used": "76994",
-        "inodes_available": "40256318",
+        "inodes_used": "121023",
+        "inodes_available": "40212289",
         "inodes_percent_used": "1%",
         "fs_type": "xfs",
         "mount_options": [
@@ -261,18 +269,18 @@
           "relatime"
         ]
       },
-      "mqueue": {
-        "mount": "/dev/mqueue",
-        "fs_type": "mqueue",
+      "hugetlbfs": {
+        "mount": "/dev/hugepages",
+        "fs_type": "hugetlbfs",
         "mount_options": [
           "rw",
           "relatime",
           "seclabel"
         ]
       },
-      "hugetlbfs": {
-        "mount": "/dev/hugepages",
-        "fs_type": "hugetlbfs",
+      "mqueue": {
+        "mount": "/dev/mqueue",
+        "fs_type": "mqueue",
         "mount_options": [
           "rw",
           "relatime",
@@ -334,17 +342,9 @@
           "size": "13990",
           "refcount": "1"
         },
-        "ppdev": {
-          "size": "17671",
-          "refcount": "0"
-        },
         "ablk_helper": {
           "size": "13597",
           "refcount": "1"
-        },
-        "pcspkr": {
-          "size": "12718",
-          "refcount": "0"
         },
         "cryptd": {
           "size": "20359",
@@ -354,8 +354,24 @@
           "size": "13462",
           "refcount": "0"
         },
+        "ppdev": {
+          "size": "17671",
+          "refcount": "0"
+        },
+        "pcspkr": {
+          "size": "12718",
+          "refcount": "0"
+        },
         "i2c_piix4": {
           "size": "22106",
+          "refcount": "0"
+        },
+        "i2c_core": {
+          "size": "40325",
+          "refcount": "1"
+        },
+        "video": {
+          "size": "19263",
           "refcount": "0"
         },
         "parport_pc": {
@@ -365,14 +381,6 @@
         "parport": {
           "size": "42348",
           "refcount": "2"
-        },
-        "i2c_core": {
-          "size": "40325",
-          "refcount": "1"
-        },
-        "video": {
-          "size": "19263",
-          "refcount": "0"
         },
         "xfs": {
           "size": "915019",
@@ -442,28 +450,28 @@
     },
     "memory": {
       "swap": {
-        "cached": "812kB",
+        "cached": "2900kB",
         "total": "1048572kB",
-        "free": "1027632kB"
+        "free": "558328kB"
       },
       "total": "501080kB",
-      "free": "235896kB",
+      "free": "107448kB",
       "buffers": "0kB",
-      "cached": "69248kB",
-      "active": "109716kB",
-      "inactive": "84248kB",
-      "dirty": "8kB",
+      "cached": "189580kB",
+      "active": "117724kB",
+      "inactive": "175404kB",
+      "dirty": "24kB",
       "writeback": "0kB",
-      "anon_pages": "124036kB",
-      "mapped": "9804kB",
-      "slab": "52760kB",
-      "slab_reclaimable": "25444kB",
-      "slab_unreclaim": "27316kB",
-      "page_tables": "4088kB",
+      "anon_pages": "101068kB",
+      "mapped": "8368kB",
+      "slab": "68516kB",
+      "slab_reclaimable": "38804kB",
+      "slab_unreclaim": "29712kB",
+      "page_tables": "5832kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "1299112kB",
-      "committed_as": "394916kB",
+      "committed_as": "1143184kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "4640kB",
       "vmalloc_chunk": "34359731200kB"
@@ -624,16 +632,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "5289003",
-              "packets": "55209",
+              "bytes": "7227424",
+              "packets": "32609",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "194079805",
-              "packets": "219777",
+              "bytes": "47630981",
+              "packets": "81502",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -653,10 +661,10 @@
     "platform": "centos",
     "platform_version": "7.1.1503",
     "platform_family": "rhel",
-    "uptime_seconds": 14643,
-    "uptime": "4 hours 04 minutes 03 seconds",
-    "idletime_seconds": 14103,
-    "idletime": "3 hours 55 minutes 03 seconds",
+    "uptime_seconds": 11956,
+    "uptime": "3 hours 19 minutes 16 seconds",
+    "idletime_seconds": 10695,
+    "idletime": "2 hours 58 minutes 15 seconds",
     "virtualization": {
       "systems": {
         "vbox": "guest"
@@ -666,6 +674,10 @@
     },
     "languages": {
       "c": {
+        "gcc": {
+          "version": "4.8.3",
+          "description": "gcc version 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) "
+        },
         "glibc": {
           "version": "2.17",
           "description": "GNU C Library (GNU libc) stable release version 2.17, by Roland McGrath et al."
@@ -718,12 +730,12 @@
       "by_device": {
         "/dev/mapper/centos-root": {
           "kb_size": "40313620",
-          "kb_used": "1787636",
-          "kb_available": "38525984",
-          "percent_used": "5%",
+          "kb_used": "2733580",
+          "kb_available": "37580040",
+          "percent_used": "7%",
           "total_inodes": "40333312",
-          "inodes_used": "76994",
-          "inodes_available": "40256318",
+          "inodes_used": "121023",
+          "inodes_available": "40212289",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -946,17 +958,6 @@
             "/sys/kernel/debug"
           ]
         },
-        "mqueue": {
-          "fs_type": "mqueue",
-          "mount_options": [
-            "rw",
-            "relatime",
-            "seclabel"
-          ],
-          "mounts": [
-            "/dev/mqueue"
-          ]
-        },
         "hugetlbfs": {
           "fs_type": "hugetlbfs",
           "mount_options": [
@@ -966,6 +967,17 @@
           ],
           "mounts": [
             "/dev/hugepages"
+          ]
+        },
+        "mqueue": {
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ],
+          "mounts": [
+            "/dev/mqueue"
           ]
         },
         "/dev/sda": {
@@ -1000,12 +1012,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "40313620",
-          "kb_used": "1787636",
-          "kb_available": "38525984",
-          "percent_used": "5%",
+          "kb_used": "2733580",
+          "kb_available": "37580040",
+          "percent_used": "7%",
           "total_inodes": "40333312",
-          "inodes_used": "76994",
-          "inodes_available": "40256318",
+          "inodes_used": "121023",
+          "inodes_available": "40212289",
           "inodes_percent_used": "1%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -1061,12 +1073,12 @@
         },
         "/run": {
           "kb_size": "250540",
-          "kb_used": "4344",
-          "kb_available": "246196",
+          "kb_used": "4364",
+          "kb_available": "246176",
           "percent_used": "2%",
           "total_inodes": "62635",
-          "inodes_used": "319",
-          "inodes_available": "62316",
+          "inodes_used": "328",
+          "inodes_available": "62307",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1383,17 +1395,6 @@
             "debugfs"
           ]
         },
-        "/dev/mqueue": {
-          "fs_type": "mqueue",
-          "mount_options": [
-            "rw",
-            "relatime",
-            "seclabel"
-          ],
-          "devices": [
-            "mqueue"
-          ]
-        },
         "/dev/hugepages": {
           "fs_type": "hugetlbfs",
           "mount_options": [
@@ -1404,19 +1405,30 @@
           "devices": [
             "hugetlbfs"
           ]
+        },
+        "/dev/mqueue": {
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "seclabel"
+          ],
+          "devices": [
+            "mqueue"
+          ]
         }
       },
       "by_pair": {
         "/dev/mapper/centos-root,/": {
           "device": "/dev/mapper/centos-root",
           "kb_size": "40313620",
-          "kb_used": "1787636",
-          "kb_available": "38525984",
-          "percent_used": "5%",
+          "kb_used": "2733580",
+          "kb_available": "37580040",
+          "percent_used": "7%",
           "mount": "/",
           "total_inodes": "40333312",
-          "inodes_used": "76994",
-          "inodes_available": "40256318",
+          "inodes_used": "121023",
+          "inodes_available": "40212289",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1472,13 +1484,13 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "250540",
-          "kb_used": "4344",
-          "kb_available": "246196",
+          "kb_used": "4364",
+          "kb_available": "246176",
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "62635",
-          "inodes_used": "319",
-          "inodes_available": "62316",
+          "inodes_used": "328",
+          "inodes_available": "62307",
           "inodes_percent_used": "1%",
           "fs_type": "tmpfs",
           "mount_options": [
@@ -1771,20 +1783,20 @@
             "relatime"
           ]
         },
-        "mqueue,/dev/mqueue": {
-          "device": "mqueue",
-          "mount": "/dev/mqueue",
-          "fs_type": "mqueue",
+        "hugetlbfs,/dev/hugepages": {
+          "device": "hugetlbfs",
+          "mount": "/dev/hugepages",
+          "fs_type": "hugetlbfs",
           "mount_options": [
             "rw",
             "relatime",
             "seclabel"
           ]
         },
-        "hugetlbfs,/dev/hugepages": {
-          "device": "hugetlbfs",
-          "mount": "/dev/hugepages",
-          "fs_type": "hugetlbfs",
+        "mqueue,/dev/mqueue": {
+          "device": "mqueue",
+          "mount": "/dev/mqueue",
+          "fs_type": "mqueue",
           "mount_options": [
             "rw",
             "relatime",
@@ -1985,7 +1997,7 @@
         "rotational": "1"
       }
     },
-    "ohai_time": 1445079120.1057074,
+    "ohai_time": 1445147952.9149628,
     "etc": {
       "passwd": {
         "root": {
@@ -2155,6 +2167,13 @@
           "uid": 998,
           "shell": "/bin/false",
           "gecos": ""
+        },
+        "mysql": {
+          "dir": "/var/lib/mysql",
+          "gid": 27,
+          "uid": 27,
+          "shell": "/bin/bash",
+          "gecos": "MySQL Server"
         }
       },
       "group": {
@@ -2403,28 +2422,52 @@
           "members": [
 
           ]
+        },
+        "mysql": {
+          "gid": 27,
+          "members": [
+
+          ]
+        },
+        "stapusr": {
+          "gid": 156,
+          "members": [
+
+          ]
+        },
+        "stapsys": {
+          "gid": 157,
+          "members": [
+
+          ]
+        },
+        "stapdev": {
+          "gid": 158,
+          "members": [
+
+          ]
         }
       }
     },
     "current_user": "root",
     "root_group": "root",
     "recipes": [
-      "dbserver",
-      "dbserver::default"
+      "ruby",
+      "ruby::default"
     ],
     "expanded_run_list": [
-      "dbserver::default"
+      "ruby::default"
     ],
     "roles": [
 
     ],
     "cookbooks": {
-      "dbserver": {
+      "ruby": {
         "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[dbserver]"
+    "recipe[ruby]"
   ]
 }
