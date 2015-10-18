@@ -16,9 +16,9 @@ Edit a recipe(`/path/to/chef_repo/<cookbook name>/recipes/default.rb`)
 ```
 $ cd /path/to/chef_repo
 # WhyRun
-$ chef-client -z --runlist 'recipe[<cookbook name>]' -W
+$ chef-solo -j nodes/localhost.json -c solo.rb -W
 # Cook!
-$ chef-client -z --runlist 'recipe[<cookbook name>]'
+$ chef-solo -j nodes/localhost.json -c solo.rb 
 ```
 
 ## Simple recipe
