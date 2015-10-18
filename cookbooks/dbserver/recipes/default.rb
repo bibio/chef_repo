@@ -14,8 +14,7 @@ package 'mysql-community-release-el6-5.noarch.rpm' do
   provider Chef::Provider::Package::Rpm
 end
 
-package 'mysql-community-server'
-package 'mysql-community-devel'
+package ['mysql-community-server', 'mysql-community-devel']
 
 service 'mysqld' do
   action [:enable, :start]
