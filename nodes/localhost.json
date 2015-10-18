@@ -5,14 +5,6 @@
 
     ]
   },
-  "default": {
-    "ruby": {
-      "user": "vagrant",
-      "rbenv_git_repository": "https://github.com/sstephenson/rbenv.git",
-      "ruby_build_git_repository": "https://github.com/sstephenson/ruby-build.git",
-      "ruby_version": "2.2.3"
-    }
-  },
   "automatic": {
     "cpu": {
       "0": {
@@ -80,13 +72,13 @@
     "filesystem": {
       "/dev/mapper/centos-root": {
         "kb_size": "40313620",
-        "kb_used": "2733580",
-        "kb_available": "37580040",
+        "kb_used": "2735376",
+        "kb_available": "37578244",
         "percent_used": "7%",
         "mount": "/",
         "total_inodes": "40333312",
-        "inodes_used": "121023",
-        "inodes_available": "40212289",
+        "inodes_used": "121338",
+        "inodes_available": "40211974",
         "inodes_percent_used": "1%",
         "fs_type": "xfs",
         "mount_options": [
@@ -450,28 +442,28 @@
     },
     "memory": {
       "swap": {
-        "cached": "2900kB",
+        "cached": "6728kB",
         "total": "1048572kB",
-        "free": "558328kB"
+        "free": "562888kB"
       },
       "total": "501080kB",
-      "free": "107448kB",
+      "free": "162736kB",
       "buffers": "0kB",
-      "cached": "189580kB",
-      "active": "117724kB",
-      "inactive": "175404kB",
-      "dirty": "24kB",
+      "cached": "124624kB",
+      "active": "168632kB",
+      "inactive": "74312kB",
+      "dirty": "16kB",
       "writeback": "0kB",
-      "anon_pages": "101068kB",
-      "mapped": "8368kB",
-      "slab": "68516kB",
-      "slab_reclaimable": "38804kB",
-      "slab_unreclaim": "29712kB",
-      "page_tables": "5832kB",
+      "anon_pages": "113468kB",
+      "mapped": "14276kB",
+      "slab": "66216kB",
+      "slab_reclaimable": "37436kB",
+      "slab_unreclaim": "28780kB",
+      "page_tables": "5760kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "1299112kB",
-      "committed_as": "1143184kB",
+      "committed_as": "1141932kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "4640kB",
       "vmalloc_chunk": "34359731200kB"
@@ -632,16 +624,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "7227424",
-              "packets": "32609",
+              "bytes": "8012427",
+              "packets": "34584",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "47630981",
-              "packets": "81502",
+              "bytes": "48295419",
+              "packets": "84803",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -661,10 +653,10 @@
     "platform": "centos",
     "platform_version": "7.1.1503",
     "platform_family": "rhel",
-    "uptime_seconds": 11956,
-    "uptime": "3 hours 19 minutes 16 seconds",
-    "idletime_seconds": 10695,
-    "idletime": "2 hours 58 minutes 15 seconds",
+    "uptime_seconds": 12466,
+    "uptime": "3 hours 27 minutes 46 seconds",
+    "idletime_seconds": 11142,
+    "idletime": "3 hours 05 minutes 42 seconds",
     "virtualization": {
       "systems": {
         "vbox": "guest"
@@ -730,12 +722,12 @@
       "by_device": {
         "/dev/mapper/centos-root": {
           "kb_size": "40313620",
-          "kb_used": "2733580",
-          "kb_available": "37580040",
+          "kb_used": "2735376",
+          "kb_available": "37578244",
           "percent_used": "7%",
           "total_inodes": "40333312",
-          "inodes_used": "121023",
-          "inodes_available": "40212289",
+          "inodes_used": "121338",
+          "inodes_available": "40211974",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1012,12 +1004,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "40313620",
-          "kb_used": "2733580",
-          "kb_available": "37580040",
+          "kb_used": "2735376",
+          "kb_available": "37578244",
           "percent_used": "7%",
           "total_inodes": "40333312",
-          "inodes_used": "121023",
-          "inodes_available": "40212289",
+          "inodes_used": "121338",
+          "inodes_available": "40211974",
           "inodes_percent_used": "1%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -1422,13 +1414,13 @@
         "/dev/mapper/centos-root,/": {
           "device": "/dev/mapper/centos-root",
           "kb_size": "40313620",
-          "kb_used": "2733580",
-          "kb_available": "37580040",
+          "kb_used": "2735376",
+          "kb_available": "37578244",
           "percent_used": "7%",
           "mount": "/",
           "total_inodes": "40333312",
-          "inodes_used": "121023",
-          "inodes_available": "40212289",
+          "inodes_used": "121338",
+          "inodes_available": "40211974",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1997,7 +1989,7 @@
         "rotational": "1"
       }
     },
-    "ohai_time": 1445147952.9149628,
+    "ohai_time": 1445148462.446126,
     "etc": {
       "passwd": {
         "root": {
@@ -2452,22 +2444,22 @@
     "current_user": "root",
     "root_group": "root",
     "recipes": [
-      "ruby",
-      "ruby::default"
+      "build-base",
+      "build-base::default"
     ],
     "expanded_run_list": [
-      "ruby::default"
+      "build-base::default"
     ],
     "roles": [
 
     ],
     "cookbooks": {
-      "ruby": {
+      "build-base": {
         "version": "0.1.0"
       }
     }
   },
   "run_list": [
-    "recipe[ruby]"
+    "recipe[build-base]"
   ]
 }
