@@ -2,6 +2,17 @@
 
 A kitchen of my development environment.
 
+## Using berkshelf
+
+```
+$ cd /path/to/chef_repo
+$ vi Berksfile
+$ berks vendor
+ -> install berks-cookbooks
+```
+
+Add cookbook path to solo.rb
+
 ## How to create a cookbook
 
 ```
@@ -20,7 +31,6 @@ $ chef-solo -j nodes/localhost.json -c solo.rb -W
 # Cook!
 $ chef-solo -j nodes/localhost.json -c solo.rb 
 ```
-
 ## Simple recipe
 
 1.Write a recipe.
