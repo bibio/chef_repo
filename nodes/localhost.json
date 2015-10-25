@@ -2,19 +2,23 @@
   "name": "localhost",
   "run_list": [
     "recipe[build-essential]",
-    "recipe[ruby_rbenv::user]"
+    "recipe[ruby_build]",
+    "recipe[ruby_rbenv::user]",
+    "recipe[redis]",
+    "recipe[memcached]"
   ],
-  "default": {
-    "rbenv": {
-      "user_installs": [ { 
-        "user": "vagrant",
+  "rbenv": {
+    "user_installs": [
+      { "user": "vagrant",
         "rubies": ["2.2.3"],
-        "gems" : {
-          "2.2.3": [ { 
-            "name" : "bundler" 
-          } ]
+        "global": "2.2.3",
+        "gems": {
+          "2.2.3": [
+            { "name": "bundler"
+            }
+          ]
         }
-      } ]
-    }
+      }
+    ]
   }
 }
