@@ -5,7 +5,11 @@
     "recipe[ruby_build]",
     "recipe[ruby_rbenv::user]",
     "recipe[redis]",
-    "recipe[memcached]"
+    "recipe[memcached]",
+    "recipe[mysql]",
+    "recipe[fluentd]",
+    "recipe[etckeeper]",
+    "recipe[tmux]"
   ],
   "rbenv": {
     "user_installs": [
